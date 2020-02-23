@@ -13,6 +13,9 @@ target
 .project
 .settings
 
+### Visual Studio code ###
+.vscode
+
 
 ### Mac OS System ###
 .DS_Store

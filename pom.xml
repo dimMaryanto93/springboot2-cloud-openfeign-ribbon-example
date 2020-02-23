@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.maryanto.dimas.example</groupId>
-	<artifactId>springboot2-cloud-parent</artifactId>
+	<artifactId>springboot2-cloud-parent-example</artifactId>
 	<version>1.0.0-release</version>
 	<name>Spring Cloud Example</name>
 	<description>Demo project for Spring Boot</description>
