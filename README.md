@@ -8,10 +8,10 @@ mvn clean package install
 
 Services: 
 
-| Service Names  | Command                                          | Ports bind  |
-|---             |---                                               |---          |
-| api-gateway    | `mvn clean -pl netflix-zuul spring-boot:run`     | 8765        |
-| eureka-server  | `mvn clean -pl eureka-server spring-boot:run`    | 8761        | 
+| Service Names  | Command                                          | Ports bind  | Required    |
+|---             |---                                               |---          | ---         |
+| eureka-server  | `mvn clean -pl eureka-server spring-boot:run`    | 8761        | always      |
+| api-gateway    | `mvn clean -pl netflix-zuul spring-boot:run`     | 8765        | always      |
 
 ## Maintainers
 
