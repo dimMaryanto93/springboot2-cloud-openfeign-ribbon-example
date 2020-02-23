@@ -1,5 +1,11 @@
 ## Spring Cloud Discovery Service
 
+For first-time you need install the dependency using command:
+
+```bash
+mvn clean package install
+```
+
 Services: 
 
 | Service Names  | Command                                          | Ports bind  |
