@@ -19,19 +19,11 @@ eureka:
 zuul:
   sensitive-headers: Cookie,Set-Cookie
   ignored-services: '*'
-#  routes:
-#    employees-service:
-#      path: /sales-tools-employees-service/**
-#      serviceId: sales-tools-employees-service
-#      stripPrefix: true
-#    auth-service:
-#      path: /sales-tools-auth-service/**
-#      serviceId: sales-tools-auth-service
-#      stripPrefix: true
-#    booking-service:
-#      path: /sales-tools-booking-service/**
-#      serviceId: sales-tools-booking-service
-#      stripPrefix: true
+  routes:
+    wilayah-service:
+      path: /spring-cloud-wilayah-service/**
+      serviceId: spring-cloud-wilayah-service
+      stripPrefix: false
   host:
     connect-timeout-millis: 60000
 hystrix:
