@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.maryanto.dimas.example</groupId>
-	<artifactId>springboot2-cloud-example</artifactId>
+	<artifactId>springboot2-cloud-parent</artifactId>
 	<version>1.0.0-release</version>
-	<name>springboot2-cloud-example</name>
+	<name>Spring Cloud Example</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>pom</packaging>
 
@@ -62,7 +62,11 @@
             <artifactId>springfox-bean-validators</artifactId>
             <version>${swagger.version}</version>
         </dependency>
-
+		<dependency>
+            <groupId>com.maryanto.dimas.plugins</groupId>
+            <artifactId>web-commons</artifactId>
+            <version>2.0.4-release</version>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
