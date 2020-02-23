@@ -19,3 +19,9 @@
     - Add Dependency `org.springframework.cloud:spring-cloud-starter-netflix-zuul`
     - Enabled Swagger UI
     - Enabled Swagger Resource Provider (add resource on services registered on eureka client)
+- Add Module `wilayah-service`
+    - Add Dependency `org.springframework.boot:spring-boot-starter-data-jpa`
+    - Add Dependency `org.springframework.boot:spring-boot-starter-web`
+    - Add Dependency `org.flywaydb:flyway-core`
+    - Add Dependency `mysql:mysql-connector-java`
+- Add Docker compose for `mysql:5.7` container

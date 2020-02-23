@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  mysql:
+    image: repository.dimas-maryanto.com:8086/mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_USER=wilayah_service
+      - MYSQL_PASSWORD=wilayah_service
+      - MYSQL_DATABASE=wilayah_service
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - spring-cloud-network
+volumes:
+  mysql_data:
+networks:
+  spring-cloud-network:

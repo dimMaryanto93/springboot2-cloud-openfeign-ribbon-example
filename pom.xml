@@ -34,6 +34,7 @@
 	<modules>
 		<module>eureka-server</module>
 		<module>netflix-zuul</module>
+		<module>wilayah-service</module>
 	</modules>
 
 	<dependencies>
