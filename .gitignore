@@ -16,6 +16,9 @@ target
 ### Visual Studio code ###
 .vscode
 
-
 ### Mac OS System ###
 .DS_Store
+
+### Log files ###
+*.log
+*.log.*
