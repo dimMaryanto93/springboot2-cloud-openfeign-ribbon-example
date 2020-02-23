@@ -33,7 +33,7 @@
 
 	<modules>
 		<module>eureka-server</module>
-		<module>netfix-zuul</module>
+		<module>netflix-zuul</module>
 	</modules>
 
 	<dependencies>
