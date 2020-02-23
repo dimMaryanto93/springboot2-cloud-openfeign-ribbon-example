@@ -15,3 +15,7 @@
     - Add Dependecy `org.springframework.cloud:spring-cloud-starter-netflix-eureka-server`
     - Add Plugin `org.codehaus.mojo:versions-maven-plugin`
     - Add Plugin `org.apache.maven.plugins:maven-resources-plugin`
+- Add Module `netflix-zuul` for API Gateway
+    - Add Dependency `org.springframework.cloud:spring-cloud-starter-netflix-zuul`
+    - Enabled Swagger UI
+    - Enabled Swagger Resource Provider (add resource on services registered on eureka client)

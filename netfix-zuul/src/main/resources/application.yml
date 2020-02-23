@@ -1,0 +1,48 @@
+server:
+  port: ${APPLICATION_PORT:8765}
+spring:
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+    fullname: @project.name@
+logging:
+  level:
+    org.springframework: ERROR
+    com.tabeldata: ${LOG_LEVEL:DEBUG}
+  file:
+    name: ${LOG_LOCATION:${spring.application.name}.log}
+eureka:
+  client:
+    service-url:
+      default-zone: ${EUREKA_SERVER:http://localhost:8761/eureka/}
+    fetch-registry: true
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+  ignored-services: '*'
+#  routes:
+#    employees-service:
+#      path: /sales-tools-employees-service/**
+#      serviceId: sales-tools-employees-service
+#      stripPrefix: true
+#    auth-service:
+#      path: /sales-tools-auth-service/**
+#      serviceId: sales-tools-auth-service
+#      stripPrefix: true
+#    booking-service:
+#      path: /sales-tools-booking-service/**
+#      serviceId: sales-tools-booking-service
+#      stripPrefix: true
+  host:
+    connect-timeout-millis: 60000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+  metrics:
+    enabled: true
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

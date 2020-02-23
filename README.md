@@ -2,10 +2,10 @@
 
 Services: 
 
-| service names                 | ports bind        |
-|---                            |---                |
-| api-gateway                   | 8765              |
-| eureka-server                 | 8761              | 
+| Service Names  | Command                                          | Ports bind  |
+|---             |---                                               |---          |
+| api-gateway    | `mvn clean -pl netflix-zuul spring-boot:run`     | 8765        |
+| eureka-server  | `mvn clean -pl eureka-server spring-boot:run`    | 8761        | 
 
 ## Maintainers
 
