@@ -12,7 +12,7 @@ Services:
 |---                |---                                               |---                 | ---         |
 | eureka-server     | `mvn clean -pl eureka-server spring-boot:run`    | 8761               | always      |
 | api-gateway       | `mvn clean -pl netflix-zuul spring-boot:run`     | 8765               | always      |
-| wilayah-service   | `mvn clean -pl wilayah-service spring-boot:run`  | [8011 ... 8020]    | Optional    |
+| wilayah-service   | `mvn clean -pl wilayah-service spring-boot:run`  | [8011..8020]       | Optional    |
 
 ## Maintainers
 
