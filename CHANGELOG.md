@@ -24,4 +24,9 @@
     - Add Dependency `org.springframework.boot:spring-boot-starter-web`
     - Add Dependency `org.flywaydb:flyway-core`
     - Add Dependency `mysql:mysql-connector-java`
-- Add Docker compose for `mysql:5.7` container
+- Add Module `nasabah-service`
+    - Add Dependency `org.springframework.boot:spring-boot-starter-data-jpa`
+    - Add Dependency `org.springframework.boot:spring-boot-starter-web`
+    - Add Dependency `org.flywaydb:flyway-core`
+    - Add Dependency `org.postgresql:postgresql`
+- Add Docker compose for `mysql:5.7`, `postgresql:12.1`

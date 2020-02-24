@@ -13,7 +13,20 @@ services:
       - mysql_data:/var/lib/mysql
     networks:
       - spring-cloud-network
+  postgres:
+    image: repository.dimas-maryanto.com:8086/postgres:12.1
+    environment:
+      - POSTGRES_PASSWORD=nasabah_service
+      - POSTGRES_USER=nasabah_service
+      - POSTGRES_DB=nasabah_service
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - spring-cloud-network
 volumes:
   mysql_data:
+  postgres_data:
 networks:
   spring-cloud-network:

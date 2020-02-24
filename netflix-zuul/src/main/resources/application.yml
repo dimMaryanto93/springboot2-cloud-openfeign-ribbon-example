@@ -24,6 +24,10 @@ zuul:
       path: /spring-cloud-wilayah-service/**
       serviceId: spring-cloud-wilayah-service
       stripPrefix: false
+    nasabah-service:
+      path: /spring-cloud-nasabah-service/**
+      serviceId: spring-cloud-nasabah-service
+      stripPrefix: false
   host:
     connect-timeout-millis: 60000
 hystrix:

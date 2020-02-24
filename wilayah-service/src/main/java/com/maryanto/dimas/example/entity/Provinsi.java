@@ -20,5 +20,5 @@ public class Provinsi {
     @Column(name = "id", nullable = false, unique = true)
     private Long id;
     @Column(name = "nama", nullable = false)
-    private String nama;
+    private String name;
 }
